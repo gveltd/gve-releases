@@ -1,13 +1,17 @@
-# GVE Secure Proxy — releases
+# GVE releases
 
-Public download page for **GVE Secure Proxy** (macOS, Apple silicon).
+Public download page for GVE distributables. The source lives in private
+repositories; this repository exists only so signed builds can be downloaded
+without a GitHub account.
 
-The source lives in a private repository; this repository exists only so the
-signed, notarized builds can be downloaded without a GitHub account.
+Releases are tagged `<product>/vX.Y.Z`. Every release here is published
+automatically by the owning repository's release pipeline after the build
+passes signing, notarization, and a strict package check. Tags in this
+repository mark the release only; they do not point at source.
 
-## Download
+## GVE Secure Proxy (macOS, Apple silicon)
 
-Go to [Releases](../../releases/latest). Each release ships two assets:
+Tags: `secure-proxy/vX.Y.Z`. Each release ships two assets:
 
 | Asset | Use when |
 |---|---|
@@ -17,10 +21,3 @@ Go to [Releases](../../releases/latest). Each release ships two assets:
 Unzip and open `GVE Secure Proxy.app`. Builds are signed with a Developer ID
 certificate, notarized by Apple, and stapled, so Gatekeeper opens them
 without warnings.
-
-## Provenance
-
-Every release here is published automatically by the private repository's
-release pipeline after the build passes signing, notarization, and a strict
-package check. Tags in this repository mark the release only; they do not
-point at source.
