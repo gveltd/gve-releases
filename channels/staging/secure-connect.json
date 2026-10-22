@@ -1,0 +1,17 @@
+{
+  "app": "secure-connect",
+  "channel": "staging",
+  "updated_at": "2026-10-22T08:06:51Z",
+  "latest": {
+    "version": "1.0.0",
+    "build": 63,
+    "published_at": "2026-10-22T06:10:00Z",
+    "platforms": {
+      "ios": {
+        "bundle_id": "net.gve.secureConnect.stg",
+        "store": "testflight",
+        "install_url": "https://testflight.apple.com/join/REPLACE_ME"
+      }
+    }
+  }
+}
