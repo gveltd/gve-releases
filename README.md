@@ -22,6 +22,12 @@ Unzip and open `GVE Secure Proxy.app`. Builds are signed with a Developer ID
 certificate, notarized by Apple, and stapled, so Gatekeeper opens them
 without warnings.
 
+## Release channels (`channels/`)
+
+`channels/<channel>/<app>.json` says which build of an app is the newest on a channel, and which is the oldest still allowed (`minimum`). `channel` is `staging` or `prod`; `app` is `secure-proxy` or `secure-connect`. The GVE OS Gateway of each environment serves its channel's files to the apps (`GET /_gw/api/v1/releases/{app}`), which is how a running Secure Proxy learns there is a newer build to install and a phone is told to update from TestFlight or the App Store.
+
+These files are written only by the owning repository's release pipelines: staging automatically with each release, prod by a promotion someone runs. Do not edit them by hand. The shape and the rules are specified in gve-gsm `docs/025-auto-update/README.md` §4.
+
 ## gve — the GVE OS command line (macOS, Linux)
 
 Tags: `gve-cli/vX.Y.Z`. One-line install (downloads the newest `gve-cli` release,

@@ -1,0 +1,28 @@
+{
+  "app": "secure-proxy",
+  "channel": "staging",
+  "updated_at": "2026-10-22T08:06:51Z",
+  "latest": {
+    "version": "0.1.20",
+    "published_at": "2026-10-21T12:37:26Z",
+    "notes_url": "https://github.com/gveltd/gve-releases/releases/tag/secure-proxy/v0.1.20",
+    "artifacts": [
+      {
+        "platform": "macos",
+        "arch": "arm64",
+        "min_os": "15.0",
+        "url": "https://github.com/gveltd/gve-releases/releases/download/secure-proxy/v0.1.20/GVE-Secure-Proxy-0.1.20-macos-arm64.zip",
+        "sha256": "adb3b226f056d56dcabbc1dccabae13007ed6508d7616b35df5d65ddce1ed171",
+        "size": 12166461
+      },
+      {
+        "platform": "macos",
+        "arch": "arm64",
+        "min_os": "14.0",
+        "url": "https://github.com/gveltd/gve-releases/releases/download/secure-proxy/v0.1.20/GVE-Secure-Proxy-0.1.20-macos-arm64.macos14.zip",
+        "sha256": "abbead6d51c16120e95bf0a8faa13a5d8dbf2c2bb9d872ccadfb26e7fbcf2d8d",
+        "size": 12133369
+      }
+    ]
+  }
+}
